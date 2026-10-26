@@ -1,0 +1,208 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #F7F8F2;
+    color: #243C30;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    border-bottom: 1px solid #DDE5D8;
+}
+
+.logo {
+    color: #355B46;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #526B52;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 70px 8%;
+}
+
+.hero-content,
+.hero-card {
+    flex: 1;
+}
+
+.eyebrow,
+.card-label {
+    color: #66856A;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 45px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+h1 span {
+    color: #739475;
+}
+
+.description {
+    color: #687568;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.primary-button {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #355B46;
+    color: white;
+    border-radius: 8px;
+}
+
+.primary-button:hover {
+    background: #243C30;
+}
+
+.hero-card {
+    padding: 25px;
+    background: white;
+    border: 1px solid #DDE5D8;
+    border-radius: 15px;
+}
+
+.hero-card h2 {
+    margin-bottom: 20px;
+}
+
+.chart {
+    height: 130px;
+    background: #F0F4EC;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.chart-line {
+    position: relative;
+    top: 60px;
+    width: 100%;
+    border-top: 3px solid #739475;
+    transform: rotate(-8deg);
+}
+
+.hero-card p:last-child {
+    color: #687568;
+    font-size: 13px;
+}
+
+.calculator {
+    width: 90%;
+    max-width: 450px;
+    margin: 50px auto;
+    padding: 25px;
+    background: white;
+    border: 1px solid #DDE5D8;
+    border-radius: 12px;
+}
+
+.calculator h1 {
+    font-size: 30px;
+}
+
+.calculator p {
+    color: #687568;
+    line-height: 1.6;
+}
+
+.calculator label {
+    display: block;
+    margin-top: 18px;
+}
+
+.calculator input,
+.calculator select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #DDE5D8;
+    border-radius: 6px;
+    font-size: 15px;
+    background: white;
+    color: #243C30;
+}
+
+.calculator input[readonly] {
+    background: #F0F4EC;
+}
+
+.calculator button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 22px;
+    background: #355B46;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.calculator button:hover {
+    background: #243C30;
+}
+
+#result {
+    margin-top: 20px;
+}
+
+footer {
+    padding: 20px 8%;
+    border-top: 1px solid #DDE5D8;
+    color: #687568;
+    font-size: 13px;
+}
+
+@media (max-width: 650px) {
+    .navbar {
+        padding: 18px 5%;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 45px 6%;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    .calculator {
+        margin: 30px auto;
+        padding: 20px;
+    }
+}
