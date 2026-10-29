@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVaR Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">SVaR.</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+            </div>
+        </nav>
+    </header>
+    <div class="calculator">
+        <h1>SVaR Calculator</h1>
+        <p>Enter your details to explore financial risk.</p>
+        <form id="svarForm">
+            <label for="portfolio">Portfolio Value (₹)</label>
+            <input type="number" id="portfolio" min="1" required>
+            <label for="confidence">Confidence Level</label>
+            <select id="confidence" required>
+                <option value="95">95%</option>
+                <option value="99">99%</option>
+            </select>
+            <label for="period">Stress Period</label>
+            <input
+                type="text"
+                id="period"
+                value="August 2007 – June 2009"
+                readonly
+            >
+            <button type="submit">Calculate</button>
+        </form>
+        <p id="result">Your result will appear here.</p>
+    </div>
+    <footer>SVaR Calculator | Student Project</footer>
+</body>
+</html>
